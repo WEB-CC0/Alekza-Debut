@@ -33,7 +33,7 @@ Font Colors
 
     background-image: url('Title_Background.png');
     background-size: cover;
-    background-position: -400px;
+    background-position: right;
     background-repeat: no-repeat;
 
 
@@ -96,7 +96,7 @@ Font Colors
     flex-direction: column;
 
     color: white;
-    background: linear-gradient(180deg,rgba(87, 25, 53, 1) 11%, rgba(0, 0, 0, 1) 35%);
+    background: linear-gradient(180deg,rgba(87, 25, 53, 1) 5%, rgba(0, 0, 0, 1) 20%);   
 }
 
 .venue-header{
@@ -108,22 +108,51 @@ Font Colors
     h1{
         font-family: "Pinyon Script";
         font-size: 10em;
+        text-shadow: 0px 2px 5px black;
     }
 
     h2{
         font-family: "Quattrocento";
         font-size: 2em;
+        text-shadow: 0px 2px 5px black;
     }
 }
 
 .venue-content{
     width: 100%;
     background-color: rgba(5, 221, 149, 0.374);
+    padding: 10px;
+    gap: 10px;
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    iframe{
+        width: 100%;
+        height: 100%;
+
+        border-radius: 20px;
+    }
+
+}
+.venue-pictures{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 10px;
+    
+
+
+    img{
+        width: 90%;
+        height: 150px;
+        object-fit: cover;
+        overflow-x: hidden;
+
+        border-radius: 20px;
+    }
 }
 
 
@@ -132,24 +161,78 @@ Font Colors
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
+    padding: 20px 0px;
 }
 
 #Roses{
-    background-color: blue;
+    background-color: rgb(135, 104, 104);
+    background: linear-gradient(180deg,rgba(0, 0, 0, 1) 5%, rgba(69, 0, 17, 1) 20%);
+    
+}
+.Roses{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url('18-Roses.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 #Treasures{
-    background-color: aquamarine;
+    background-color: #450011;;
+}
+.Treasures{
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url('18-Treasures.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 #Shots{
-    background-color: blueviolet;
+    background-color: #450011;
 }
+
+.Shots{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url('18-Shots.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}   
 #Gift-Guide{
-    background-color: rgb(160, 160, 151);
+    background-color: #450011;
     background-image: url('');
 }
+
+.Gift-Guide{
+    width: 100%;
+    height: 100%;
+
+    background-image: url('Gift-Guide.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 #Timeline{
-    
     background-color: rgba(87, 25, 53, 1);
+}
+
+#Reminders{
+    background-color: #450011;
+}
+.Reminders{
+    width: 100%;
+    height: 100%;
+
+    background-image: url('Reminders.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .timeline{
@@ -164,7 +247,7 @@ Font Colors
 
 
 .attire{
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     padding: 0px 25px;
 
@@ -174,12 +257,15 @@ Font Colors
     align-items: center;
 
     background-color: #450011;
+    color: white;
 }
 
 .attire-content{
     display: flex;
     justify-content: space-evenly;
 
+
+    
     width: 100%;
 }
 
@@ -195,6 +281,7 @@ Font Colors
         position: relative;
         top: 0px;
         font-family: "Quattrocento";
+        font-size: 2em;
     }
 
 }
@@ -219,31 +306,17 @@ Font Colors
 
 .RSVP{
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: linear-gradient(180deg,rgba(69, 0, 17, 1) 5%, rgba(0, 0, 0, 1) 20%);
+}
 
-    text-align: center;
+.RSVP-img{
+    width: 100%;
+    height: 100%;
 
-    h1{
-        font-size: 9em;
-        font-family: "Pinyon Script";
-        
-    }
-
-    p{
-        font-size: 2em;
-        font-family: "Quattrocento";
-    }
-
-    button{
-        font-family: "Roboto Mono";
-        border: none;
-        border-radius: 40px;
-
-        padding: 20px;
-        background-color: rgb(118, 118, 118);
-    }
+    background-image: url('RSVP.png');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 @media (min-width: 950px) 
@@ -274,12 +347,14 @@ Font Colors
         h1{
             font-size: 20em;
             text-align: center;
+            text-shadow: 0px 2px 5px black;
         }
         h2{
             position: relative;
             top: -25px;
             font-size: 5em;
             text-align: center;
+            text-shadow: 0px 2px 5px black;
         }
 
         h3{
@@ -293,7 +368,10 @@ Font Colors
 
     }
 
-
+    .attire-content img{
+        height: 600px;
+        margin: 20px 0px
+    }
 
 
 
