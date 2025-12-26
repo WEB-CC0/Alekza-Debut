@@ -15,6 +15,10 @@ h1,h2,h3,h4,p{
     padding: 0;
 }
 
+.custom{
+    display: block;
+    width: 100vw;
+}
 /*
 
 Font Colors
@@ -111,7 +115,7 @@ Font Colors
     width: 100%;
     text-align: center;
 
-    background-color: rgba(0, 0, 0, 0.278);
+    background-color: rgba(0, 0, 0, 0);
 
     h1{
         font-family: "Pinyon Script";
