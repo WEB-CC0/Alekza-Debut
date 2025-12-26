@@ -108,7 +108,7 @@ Font Colors
     flex-direction: column;
 
     color: white;
-    background: linear-gradient(180deg,rgba(69, 0, 17, 1) 20%, rgba(0, 0, 0, 1) 50%, rgba(69, 0, 17, 1) 70%);  
+    background: linear-gradient(180deg,rgba(69, 0, 17, 1) 5%, rgba(0, 0, 0, 1) 50%, rgba(69, 0, 17, 1) 95%); 
 }
 
 .venue-header{
