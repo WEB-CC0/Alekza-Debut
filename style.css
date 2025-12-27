@@ -413,11 +413,91 @@ Font Colors
 
     }
 
+    .attire-header{
+        margin-top: 30px;
+        h1{
+            font-size: 12em;
+        }
+    }
+
     .attire-content img{
         height: 600px;
         margin: 20px 0px
     }
 
+    .attire-content{
+        width: 1000px
+    }
 
+    .venue{
+    width: 100vw;
+    height: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: white;
+    background: linear-gradient(180deg,rgba(69, 0, 17, 1) 5%, rgba(0, 0, 0, 1) 50%, rgba(69, 0, 17, 1) 95%); 
+}
+
+.venue-header{
+    width: 100%;
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, 0);
+
+    h1{
+        font-family: "Pinyon Script";
+        font-size: 12em;
+        text-shadow: 0px 2px 5px black;
+    }
+    
+
+    h2{
+        font-family: "Quattrocento";
+        font-size: 3em;
+        text-shadow: 0px 2px 5px black;
+    }
+}
+
+.venue-content{
+    width: 100%;
+    height: 70%;
+    background-color: rgba(5, 221, 149, 0);
+    padding: 10px;
+    gap: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    iframe{
+        width: 100%;
+        height: 150%;
+
+        border-radius: 20px;
+    }
+
+}
+.venue-pictures{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    justify-content: space-evenly;
+    gap: 10px;
+    
+
+
+    img{
+        width: 90%;
+        height: 100%;
+        object-fit: cover;
+        overflow-x: hidden;
+
+        border-radius: 20px;
+    }
+}
 
 }
